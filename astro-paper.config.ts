@@ -2,7 +2,7 @@ import { defineAstroPaperConfig } from "./src/types/config";
 
 export default defineAstroPaperConfig({
   site: {
-    url: "https://github.com/yasminastro/yasmin.git",
+    url: "https://yasminastro.github.io/yasmin",
     title: "Yasmin的面包屑",
     description: "A minimal, responsive and SEO-friendly Astro blog theme.",
     author: "Yasmin",
