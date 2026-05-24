@@ -4,7 +4,7 @@ export default defineAstroPaperConfig({
   site: {
     url: "https://yasminastro.github.io/yasmin",
     title: "Yasmin的面包屑",
-    description: "A minimal, responsive and SEO-friendly Astro blog theme.",
+    description: "- A minimal, responsive and SEO-friendly Astro blog theme.",
     author: "Yasmin",
     profile: "https://satna.ing",
     ogImage: "default-og.jpg",
