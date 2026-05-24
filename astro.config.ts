@@ -47,9 +47,6 @@ export default defineConfig({
       ],
     },
   },
-  vite: {
-    plugins: [tailwindcss()],
-  },
   fonts: [
     {
       name: "Google Sans Code",
