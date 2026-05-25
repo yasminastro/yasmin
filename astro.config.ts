@@ -20,6 +20,7 @@ import config from "./astro-paper.config";
 export default defineConfig({
   site: "https://yasminastro.github.io",
   base: "/yasmin",
+
   integrations: [
     mdx(),
     sitemap({
@@ -27,6 +28,7 @@ export default defineConfig({
         config.features?.showArchives !== false || !page.endsWith("/archives/"),
     }),
   ],
+
   i18n: {
     locales: ["en"],
     defaultLocale: "en",
@@ -34,6 +36,7 @@ export default defineConfig({
       prefixDefaultLocale: false,
     },
   },
+
   markdown: {
     remarkPlugins: [remarkToc, [remarkCollapse, { test: "Table of contents" }]],
     shikiConfig: {
@@ -48,6 +51,7 @@ export default defineConfig({
       ],
     },
   },
+
   fonts: [
     {
       name: "Google Sans Code",
@@ -59,6 +63,7 @@ export default defineConfig({
       formats: ["woff", "ttf"],
     },
   ],
+
   env: {
     schema: {
       PUBLIC_GOOGLE_SITE_VERIFICATION: envField.string({
@@ -68,7 +73,12 @@ export default defineConfig({
       }),
     },
   },
+
   experimental: {
     svgOptimizer: svgoOptimizer(),
+  },
+
+  vite: {
+    plugins: [tailwindcss()],
   },
 });
