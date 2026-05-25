@@ -28,7 +28,7 @@ export default defineConfig({
     }),
   ],
   i18n: {
-    locales: ["en", "zh-CN"],
+    locales: ["en"],
     defaultLocale: "en",
     routing: {
       prefixDefaultLocale: false,
@@ -59,9 +59,6 @@ export default defineConfig({
       formats: ["woff", "ttf"],
     },
   ],
-  vite: {
-    plugins: [tailwindcss()],
-  },
   env: {
     schema: {
       PUBLIC_GOOGLE_SITE_VERIFICATION: envField.string({
