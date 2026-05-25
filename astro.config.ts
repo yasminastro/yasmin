@@ -59,6 +59,9 @@ export default defineConfig({
       formats: ["woff", "ttf"],
     },
   ],
+  vite: {
+    plugins: [tailwindcss()],
+  },
   env: {
     schema: {
       PUBLIC_GOOGLE_SITE_VERIFICATION: envField.string({
